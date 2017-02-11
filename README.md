@@ -10,3 +10,5 @@ npm test # to run the suit
 npm test -- -w # to run tests in watch mode
 ```
 
+Import from cms controlled projects to use.
+most models and utils can be used on backend as well
