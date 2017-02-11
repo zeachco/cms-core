@@ -1,0 +1,40 @@
+{
+  "name": "cms-core",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-preset-es2015": "^6.22.0",
+    "enzyme": "^2.7.1",
+    "jsx-test-helpers": "^1.1.0",
+    "react-scripts": "0.8.5",
+    "ts-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "npm t && react-scripts build",
+    "test": "ava",
+    "eject": "react-scripts eject"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.spec.js",
+      "!build/**/*"
+    ],
+    "verbose": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-es2015",
+      "react"
+    ]
+  }
+}
