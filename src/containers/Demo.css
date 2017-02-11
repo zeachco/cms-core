@@ -1,0 +1,28 @@
+.showcase-container {
+  margin: 1em;
+  border: 1px solid #ddd;
+}
+
+.showcase-container .fields,
+.showcase-container .preview {
+  display: inline-block;
+}
+
+.showcase-container .preview {
+  padding: 5px;
+  border: 1px inset #ddd;
+}
+
+.showcase-container .fields label{
+  display: block;
+  margin: .25em .5em;
+  padding: .5em 1em;
+  background: #ddd;
+}
+
+.showcase-container .fields input{
+  padding: .5em 1em;
+  background: white;
+  border: none;
+  box-shadow: inset 0 0 2px black;
+}
