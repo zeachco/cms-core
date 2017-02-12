@@ -130,7 +130,12 @@ class Item {
     const _context = this.getContext();
     for (var k in _context) {
       if (_context.hasOwnProperty(k) && k != '_data') {
-        id += `_${_context[k].code}`;
+        try {
+          id += `_${_context[k].code}`;
+        } catch (e) {
+          console.warn(this.get('_id'), e);
+          id += JSON.stringify(_context);
+        }
       }
     }
     return id;
