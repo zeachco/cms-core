@@ -120,6 +120,11 @@ class Item {
     return out;
   }
 
+  getThumb() {
+    const { files} = this.data;
+    return files.length ? `${files[0]}/thumb` : '';
+  }
+
   getCartId() {
     let id = this.data.code;
     const _context = this.getContext();
