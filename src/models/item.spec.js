@@ -83,6 +83,11 @@ test('getPrice()', t => {
     t.is(isValid, false);
 });
 
+test('getThumb()', t => {
+    const item = new Item(FakeItemJSON);
+    t.is(item.getThumb(), '/api/medias/_246.png/thumb');
+});
+
 test('constructor() ; clone items and keep selected states for both', t => {
     const item = new Item(FakeItemJSON);
     t.is(item.get('name'), '31009');
