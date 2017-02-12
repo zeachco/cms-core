@@ -1,14 +1,11 @@
 import './Demo.css'
 import React, { Component } from 'react'
-import loremIpsum from 'lorem-ipsum'
 import { Price } from '../components'
 
 export class Demo extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      price: ''
-    }
+    this.state = {}
   }
 
   _showcase(cName, cRef) {
@@ -21,6 +18,7 @@ export class Demo extends Component {
         this.setState({ [key]: e.target.value });
       }
       const input = React.createElement('input', {
+        key: 'input_' + key,
         name: attr,
         placeholder: attr,
         onChange: _update.bind(this)
@@ -46,11 +44,9 @@ export class Demo extends Component {
   }
 
   render() {
-    const {price} = this.state;
     return (
       <div>
         {this._showcase('Price', Price)}
-        {this._showcase('Galery', Price)}
       </div>
     );
   }
