@@ -46,7 +46,7 @@ class Item {
   }
 
   isPurchasable() {
-    return this.get('visible') && !this.flag('backorder') && this.getPrice() > 0;
+    return this.get('visible') !== false && !this.flag('backorder') && this.getPrice() > 0;
   }
 
   flag(label, value) {

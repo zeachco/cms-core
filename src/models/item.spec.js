@@ -162,6 +162,12 @@ test('isPurchasable()', t => {
     t.is(item.isPurchasable(), true);
     item.set('labels', [...item.get('labels'), 'backorder']);
     t.is(item.isPurchasable(), false);
+    item.set('labels', []);
+    t.is(item.isPurchasable(), true);
+    item.set('visible', false);
+    t.is(item.isPurchasable(), false);
+    delete item.data.visible;
+    t.is(item.isPurchasable(), true);
 });
 
 test('isVisible()', t => {
