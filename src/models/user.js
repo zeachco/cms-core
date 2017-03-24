@@ -1,4 +1,4 @@
-const autoBind = require('auto-bind');
+const autoBind = require('auto-bind-es5');
 
 class User {
   constructor(attrs) {

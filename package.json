@@ -19,7 +19,7 @@
     "ts-loader": "^2.0.0",
     "webpack": "^2.3.0",
     "webpack-dev-server": "^2.4.2",
-    "webpack-production-setup": "^2.0.0"
+    "webpack-production-setup": "^3.0.0"
   },
   "dependencies": {
     "auto-bind-es5": "^1.1.0",
