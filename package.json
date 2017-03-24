@@ -22,12 +22,13 @@
     "webpack-production-setup": "^2.0.0"
   },
   "dependencies": {
+    "auto-bind-es5": "^1.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "npm t && react-scripts build",
+    "build": "npm t && webpack",
     "test": "ava",
     "eject": "react-scripts eject"
   },
