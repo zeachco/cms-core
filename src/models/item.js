@@ -76,11 +76,9 @@ class Item {
 
   getContext() {
     this.selectedOptions = {
-      _data: this.data,
+      _data: this.data
     };
-    const {
-            options = [],
-        } = this.data;
+    const { options = [] } = this.data;
     options.forEach((og) => {
       const selectedOpt = og
                 .options
@@ -93,12 +91,10 @@ class Item {
 
   eval() {
     const _context = this.getContext();
-    const {
-            price,
-        } = this.data;
+    const { price } = this.data;
     const out = {
       value: 0,
-      isValid: false,
+      isValid: false
     };
     try {
       var initVars = '';
@@ -129,11 +125,11 @@ class Item {
     let id = this.data.code;
     const _context = this.getContext();
     for (var k in _context) {
-      if (_context.hasOwnProperty(k) && k != '_data') {
+      if (_context.hasOwnProperty(k) && k !== '_data') {
         try {
           id += `_${_context[k].code}`;
         } catch (e) {
-          console.warn(this.get('_id'), e);
+          console.warn(this.get('_id'), e); // eslint-disable-line no-console
           id += JSON.stringify(_context);
         }
       }
