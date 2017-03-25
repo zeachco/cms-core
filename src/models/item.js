@@ -13,7 +13,7 @@ class Item {
     this.data = {
       options: [],
       files: [],
-      labels: [],
+      labels: []
     };
     for (var key in attrs) {
       if (attrs.hasOwnProperty(key) && typeof attrs[key] !== 'function') {
