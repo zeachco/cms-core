@@ -7,4 +7,3 @@ export function currency(n) {
     if (n < 0) return `(${string.replace('-', '')})`;
     return string;
 }
- 
