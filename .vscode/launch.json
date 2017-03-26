@@ -13,13 +13,6 @@
                 "${workspaceRoot}/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
                 "--progress"
             ]
-        },
-        {
-            "type": "node",
-            "request": "attach",
-            "name": "Attach to Process",
-            "address": "localhost",
-            "port": 5858
         }
     ]
 }

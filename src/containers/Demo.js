@@ -1,6 +1,6 @@
 import './Demo.css'
 import React, { Component } from 'react'
-import { Price } from '../components'
+import Price from '../components/Price/Price'
 
 export class Demo extends Component {
   constructor(props) {

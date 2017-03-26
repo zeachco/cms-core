@@ -2,7 +2,7 @@ import test from 'ava';
 import React from 'react';
 import {renderJSX, JSX} from 'jsx-test-helpers';
 
-import {Price} from './Price';
+import Price from './Price';
 
 test('renders correct markup', t => {
     const actual = renderJSX(<Price value={12}/>);
