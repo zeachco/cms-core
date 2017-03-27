@@ -1,5 +1,7 @@
 # CMS-core
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zeachco/cms-core.svg)](https://greenkeeper.io/)
+
 ## install
 ```bash
 git clone git@github.com:zeachco/cms-core.git
