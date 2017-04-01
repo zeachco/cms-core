@@ -1,4 +1,4 @@
-const autoBind = require('auto-bind-es5');
+import autoBind from 'auto-bind-es5';
 
 class Item {
   constructor(attrs) {
@@ -138,4 +138,4 @@ class Item {
   }
 }
 
-module.exports = Item;
+export default Item;

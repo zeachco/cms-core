@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { currency } from '../../utils';
 
-const Price = ({ value }) => {
+export const Price = ({ value }) => {
   if (isNaN(value)) return <span>no price</span>;
   return(
     <span>
@@ -13,4 +13,4 @@ Price.propTypes = {
   value: PropTypes.number
 };
 
-module.exports = Price;
+export default Price;
