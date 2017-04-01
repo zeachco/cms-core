@@ -1,4 +1,4 @@
-export function currency(n) {
+export default function currency(n) {
     if (n === null) return '???';
     if (typeof n === 'undefined') return '???';
     if (isNaN(n)) return '???';
