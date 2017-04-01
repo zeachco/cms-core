@@ -1,4 +1,4 @@
-export const formula = (_formula, _context) => {
+const formula = (_formula, _context) => {
     const _out = {};
     try {
         let _initVars = '';
@@ -16,3 +16,5 @@ export const formula = (_formula, _context) => {
     }
     return _out;
 };
+
+export default formula;

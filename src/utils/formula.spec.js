@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import { formula } from '.';
+import formula from './formula';
 
 test('evaluate scripts with a defined context', t => {
     const out = formula('( a + b ) * 10', { a: 2, b: 3 });

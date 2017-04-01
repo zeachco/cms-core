@@ -1,5 +1,6 @@
-const Item = require('./item');
 const test = require('ava');
+
+const { Item } = require('./item');
 
 const FakeItemJSON = {
     _id: '589014f20ab85f726d21a6c1',

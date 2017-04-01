@@ -1,6 +1,6 @@
 import autoBind from 'auto-bind-es5';
 
-class Item {
+export class Item {
   constructor(attrs) {
     autoBind(this);
     this.reset(attrs);

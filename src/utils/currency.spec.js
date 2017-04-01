@@ -1,8 +1,6 @@
 import test from 'ava';
 
-import {
-    currency
-} from './currency';
+import currency from './currency';
 
 test('return formated values', t => {
     t.is(currency(1), '1.00');
@@ -20,6 +18,6 @@ test('return formated from non-number objects', t => {
     t.is(currency('-7.896'), '(7.90)');
     t.is(currency('-7.896aaa'), '???');
     t.is(currency(null), '???');
-    t.is(currency(undefined), '???');
+    t.is(currency(undefined), '???'); // eslint-disable-line
     t.is(currency({}), '???');
 });
