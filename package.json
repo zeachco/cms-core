@@ -23,10 +23,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "npm t && webpack",
-    "patch": "npm t && npm version patch && npm run publish",
-    "minor": "npm t && npm version minor && npm run publish",
-    "major": "npm t && npm version major && npm run publish",
-    "publish": "git push --follow-tags && npm publish",
+    "preversion": "npm t",
+    "postversion": "git push --follow-tags ",
     "test": "ava"
   },
   "ava": {
