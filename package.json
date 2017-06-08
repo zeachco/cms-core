@@ -12,7 +12,7 @@
   "devDependencies": {
     "ava": "^0.19.0",
     "enzyme": "^2.8.0",
-    "jsx-test-helpers": "^1.1.0",
+    "jsx-test-helpers": "^2.0.0",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
   },
