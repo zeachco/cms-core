@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "auto-bind-es5": "^1.1.0",
-    "webpack-production-setup": "^4.1.0"
+    "webpack-production-setup": "^5.0.0"
   },
   "scripts": {
     "start": "webpack-dev-server",
